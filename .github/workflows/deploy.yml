@@ -1,0 +1,38 @@
+# Nama Workflow
+name: Deploy Static Website to AWS S3
+
+# Pemicu (Trigger) - Workflow ini akan berjalan setiap kali ada push ke branch 'main'
+on:
+  push:
+    branches:
+      - main
+
+# Pekerjaan (Jobs) yang akan dilakukan
+jobs:
+  deploy:
+    # Menggunakan environment runner terbaru dari Ubuntu
+    runs-on: ubuntu-latest
+
+    # Langkah-langkah (Steps) yang akan dieksekusi
+    steps:
+      # Langkah 1: Mengambil kode dari repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Langkah 2: Mengkonfigurasi kredensial AWS
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-1 
+
+      # Langkah 3: Sync file ke S3 Bucket
+      - name: Sync files to S3
+        run: |
+          aws s3 sync . s3:/portfolio-muhammad-avi-majid-kaaffah --delete
+
+      # Langkah 4: Membuat invalidation di CloudFront
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id E2MQDL2NIBI8CY --paths "/*"
