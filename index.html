@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--------------------------------UNICONS----------------------------------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+<!--------------------------------CSS----------------------------------------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+<!--------------------------------FAVICON----------------------------------------->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <title>Avi's Portfolio</title>
+</head>
+<body>
+
+    <div class="container">
+
+<!--------------------------------HEADER----------------------------------------->
+        <nav id="header">
+            <div class="nav-logo">
+                <a href="#home" class="nav-name">AVI</a>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="MyNavMenu">
+                <ul class="nav-menu-list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#certifications" class="nav-link">Certifications</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn" onclick="downloadCV()">
+                    Download CV <i class="uil uil-file-alt"></i>
+                </button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+<!--------------------------------MAIN------------------------------------------>
+    <main class="wrapper">
+
+    <!----------------------------FEATURED BOX-------------------------------------->
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <span>Hi, I'm</span>
+                </div>
+                <div class="featured-name">
+                    <p><span>Muhammad Avi Majid Kaaffah</span></p>
+                </div>
+                <div class="featured-text-info">
+                    <p>CCNA | AWS SAA | AWS CCP | MTCNA</p>
+                </div>
+                <div class="featured-text-btn">
+                    <button class="btn blue-btn" onclick="location.href='./#contact'">Contact Info</button>
+                    <button class="btn" onclick="downloadCV()">Download CV <i class="uil uil-file-alt"></i></button>
+                </div>
+                <!-- <div class="social-icons">
+                    <div class="icon"><i class="uil uil-instagram"></i></div>
+                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                    <div class="icon"><i class="uil uil-dribbble"></i></div>
+                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                </div> -->
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="./assets/images/Yo.png" alt="avatar">
+                </div>
+            </div>
+            <div class="scroll-icon-box">
+                <a href="#about" class="scroll-btn">
+                    <i class="uil uil-mouse-alt"></i>
+                    <p>Scroll Down</p>
+                </a>
+            </div>
+        </section>
+    <!----------------------------ABOUT-------------------------------------->
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="row">
+                <div class="photo">
+                    <img src="./assets/images/about2.jpg" 
+                        alt="Profile picture"
+                        class="about-pic">
+                </div>
+                <div class="text">
+                    <div class="about-info">
+                        <p>Have a strong desire to be a life-long learner, 
+                            good team-worker, and thrive in a fast-paced and 
+                            fast-growing environment. Interested in IT security,
+                             IT network, cloud, and wireless communication.
+                              Experience in IT operations support for 
+                              infrastructure and security. Certified in AWS CCP,
+                               AWS SAA, MTCNA and CCNA. Eager to join a 
+                               high-performing team and contribute to innovative 
+                               projects.</p>
+                    </div>
+                    <div class="about-skills">
+                        <h3>Skills</h3>
+                        <p>AWS | Linux | IT Networks | Cisco | Mikrotik | Python</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!----------------------------CERTIFICATIONS-------------------------------->
+        <section class="section" id="certifications">
+            <div class="top-header">
+                <h1>Certifications</h1>
+                <p>Here are some of my professional certifications that demonstrate my skills and expertise.</p>
+            </div>
+            <div class="certifications-container">
+                <div class="certification-card">
+                    <img src="./assets/images/aws-certified-solutions-architect-associate.png" alt="AWS Certified Solutions Architect" class="certification-badge">
+                    <h3>AWS Certified Solutions Architect - Associate</h3>
+                    <p>Amazon Web Services (AWS) certification that validates expertise in designing distributed systems on AWS.</p>
+                </div>
+                <div class="certification-card">
+                    <img src="./assets/images/ccna.png" alt="Cisco Certified Network Associate (CCNA)" class="certification-badge">
+                    <h3>Cisco Certified Network Associate (CCNA)</h3>
+                    <p>Certification that demonstrates the ability to install, configure, and troubleshoot networks.</p>
+                </div>
+                <div class="certification-card">
+                    <img src="./assets/images/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" class="certification-badge">
+                    <h3>AWS Certified Cloud Practitioner</h3>
+                    <p>Certification that demonstrates foundational knowledge of AWS Cloud and its services.</p>
+                </div>
+                <div class="certification-card">
+                    <img src="./assets/images/images mtcna.png" alt="Microsoft Certified: Azure Fundamentals" class="certification-badge">
+                    <h3>MikroTik Certified Network Associate</h3>
+                    <p>Certification that validates the ability to configure and manage MikroTik routers and networks.</p>
+                </div>
+            </div>
+        </section>
+    <!----------------------------PROJECTS-------------------------------------->
+
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Linux User and Group Management</h3>
+                    <!-- <h3>Completed</h3> -->
+                    <label><a href="assets\projects\Project Sesi 4 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Linux Cronjob</h3>
+                    <label><a href="assets\projects\Project Sesi 5 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Bash Scripting</h3>
+                    <label><a href="assets\projects\Project Sesi 7 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Docker Compose</h3>
+                    <label><a href="assets\projects\Project Sesi 9 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Node Exporter & Prometheus Setup</h3>
+                    <label><a href="assets\projects\Project Sesi 11 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Monitoring Dashboard Grafana</h3>
+                    <label><a href="assets\projects\Project Sesi 12 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>IaC: Ansible</h3>
+                    <label><a href="assets\projects\Project Sesi 14 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>IaC: Terraform</h3>
+                    <label><a href="assets\projects\Project Sesi 15 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Github Basic</h3>
+                    <label><a href="assets\projects\Project Sesi 18 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Github Basic 2.0</h3>
+                    <label><a href="assets\projects\Project Sesi 19 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>CI/CD with Jenkins</h3>
+                    <label><a href="assets\projects\Project Sesi 20 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>CI/CD with Gitlab</h3>
+                    <label><a href="assets\projects\Project Sesi 22 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Kubernetes</h3>
+                    <label><a href="assets\projects\Project Sesi 25 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>HPA Kubernetes</h3>
+                    <label><a href="assets\projects\Project Sesi 26 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Database Administration</h3>
+                    <label><a href="assets\projects\Project Sesi 27 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>DevSecOps: Trivy scan in Jenkins</h3>
+                    <label><a href="assets\projects\Project Sesi 29 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Code Analysis with SonarQube in Jenkins</h3>
+                    <label><a href="assets\projects\Project Sesi 31 Bootcamp DevOps Engineer Digital Skola.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <div class="project-box">
+                    <!-- <i class="uil uil-briefcase-alt"></i> -->
+                    <h3>Three-tier Web Application Architecture</h3>
+                    <label><a href="assets\projects\Laporan Project_Muhammad Avi Majid Kaaffah.pdf" target="_blank" rel="noopener noreferrer">View Project</a></label>
+                </div>
+                <!-- <div class="project-box">
+                    <i class="uil uil-users-alt"></i>
+                    <h3>Completed</h3>
+                    <label>15+ Finished Projects</label>
+                </div>
+                <div class="project-box">
+                    <i class="uil uil-award"></i>
+                    <h3>Completed</h3>
+                    <label>15+ Finished Projects</label>
+                </div> -->
+            </div>
+        </section>
+    <!----------------------------CONTACT-------------------------------------->
+        <section class="section" id="contact">
+            <!-- <div class="top-header">
+                <h1>Get in Touch</h1>
+                <span>Do you have a project in your mind, contact me here</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Find Me <i class="uil uil-arrow-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i> Email: avikaaffah@outlook.com</p>
+                        <p><i class="uil uil-phone"></i> Tel: +62</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Name">
+                            <input type="text" class="input-field" placeholder="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn">Send <i class="uil uil-message"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            
+            <div class="top-header">
+                <p class="section__text__p1">Get In Touch</p>
+                <h1 class="title">Contact Me</h1>
+            </div>
+            
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <i class="uil uil-envelope"></i>
+                    <p><a href="mailto:avikaaffah@outlook.com">avikaaffah@outlook.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <i class="uil uil-linkedin-alt"></i>
+                    <p><a href="https://www.linkedin.com/in/avikaaffah/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!--------------------------------FOOTER----------------------------------------->
+    <footer>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#certifications">Certifications</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon">
+                <a href="https://www.instagram.com/avikaaffah/" target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/avikaaffah/" target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-linkedin-alt"></i>
+                </a>
+            </div>
+            <!-- <div class="icon"><i class="uil uil-dribbble"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div> -->
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; 2025 <a href="#home" style="text-decoration: none;">Muhmmad Avi Majid Kaaffah</a> - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    </div>
+    
+<!--------------------------------TYPING JS LINK----------------------------------------->
+
+<!--------------------------------SR JS LINK----------------------------------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<!--------------------------------MAIN JS----------------------------------------->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
