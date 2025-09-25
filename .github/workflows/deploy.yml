@@ -30,7 +30,7 @@ jobs:
       # Langkah 3: Sync file ke S3 Bucket
       - name: Sync files to S3
         run: |
-          aws s3 sync . s3:/portfolio-muhammad-avi-majid-kaaffah --delete
+          aws s3 sync . s3://portfolio-muhammad-avi-majid-kaaffah --delete
 
       # Langkah 4: Membuat invalidation di CloudFront
       - name: Invalidate CloudFront Cache
